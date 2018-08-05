@@ -20,7 +20,8 @@ dependencies {
     compile group: 'org.slf4j', name: 'slf4j-api', version: slf4jVersion
     runtime group: 'ch.qos.logback', name: 'logback-classic', version: logbackVersion
     compile "org.deeplearning4j:deeplearning4j-core:${dl4j_version}"
-    compile "org.nd4j:nd4j-native-platform:${dl4j_version}"
+    compile group: 'org.nd4j', name: 'nd4j-cuda-9.0-platform', version: '1.0.0-beta'
+//    compile "org.nd4j:nd4j-native-platform:${dl4j_version}"
     compile group: 'jfree', name: 'jfreechart', version: '1.0.13'
     compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.5'
 }
